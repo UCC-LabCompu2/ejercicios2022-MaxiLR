@@ -17,27 +17,36 @@
 <!--Si tienes dudas de como hacer un formulario, puedes consultar:
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
-<h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
+<h2>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h2>
 
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
+<form>
+<fieldset>
+    <legend>Persona:</legend>
+    <p><label for="Nombre">Nombre: </label><input type="text" name="Nombre"></p>
+    <p><label for="Apellido">Apellido: </label><input type="text" name="Apellido"></p>
+    <p><label for="Sexo">Sexo: </label><label for="Masculino">Masculino </label><input type="radio" name="gender" value="male"><label for="Femenino">Femenino</label><input type="radio" name="gender" value="female"></p>
+    <p><label for="Edad">Edad: </label><input type="number" min="1" name="Edad" style="width: 60px"></p>
+    <p><label for="Email">Email: </label><input type="email" name="Email"></p>
+</fieldset>
+    <p>Usuario: <input type="text" name="User"></p>
+    <p>Password: <input type="password" name="Pass"></p>
+    <p>Confirmar Password:<input type="password" name="ConfPass"></p>
 
-Agregue un comentario:
+    <p>Tipo de servicio:<select name="Servicio">
+        <option value="Free">Free</option>
+        <option value="Standard">Standard</option>
+        <option value="Premium">Premium</option>
+    </select> </p>
+    <p>Tema:
+        <input type="checkbox">Política
+        <input type="checkbox">Negocios
+        <input type="checkbox">Tecnología
+        <input type="checkbox">Salud</p>
+    <p>Agregue un comentario:</p>
+    <p><textarea></textarea></p>
 
-Boton de Enviar
-
+    <p><button>Boton de Enviar</button></p>
+</form>
 
 </body>
 </html>
